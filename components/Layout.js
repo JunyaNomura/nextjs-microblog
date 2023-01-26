@@ -10,10 +10,10 @@ function Layout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
-        {/* <svg xmlns="http://www.w3.org/2000/svg" className="fill-blue-500">
-          <path d="M 10 80 Q 52.5 10, 95 80 T 180 80" stroke="black" fill="transparent"/>
-        </svg> */}
-        <h1 className="text-2xl font-bold text-center">{name}</h1>
+        <div className="relative w-32 mx-auto rounded-full overflow-hidden bg-slate-500">
+          <img src="/images/img5.jpg" alt="" className="w-32 h-32 rounded-full ring-2 hover:scale-110 object-cover duration-300" />
+        </div>
+        <h1 className="text-2xl mt-4 font-bold text-center">{name}</h1>
       </header>
       <main>{children}</main>
     </div>
